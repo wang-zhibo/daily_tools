@@ -19,29 +19,5 @@ setTimeout(
 
 			// 清空暂停视频函数
 			video.pause = () => {};
-
-			// 下面这些应该也有效。
-
-			// 不再响应暂停事件
-		/*
-			video.addEventListener(
-				"pause", event => event.preventDefault()
-			);
-		*/
-
-			// 暂停后自动点击播放按钮
-		/*
-			video.addEventListener(
-				"pause", event => {
-					const playButton =
-						video.parentElement.querySelector(
-							':scope button.vjs-play-control'
-						);
-					playButton && playButton.click();
-				}
-			);
-		*/
-
-		}
 	), 3000
 );
