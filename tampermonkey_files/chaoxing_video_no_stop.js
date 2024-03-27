@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        超星 - 禁止暂停视频
-// @description 超星 no stop
+// @description 不要停下来啊！（指视频）（不支持 Flash 视频）
 // @namespace   xinuo
 // @author      xinuo
 // @version     0.1
@@ -19,5 +19,7 @@ setTimeout(
 
 			// 清空暂停视频函数
 			video.pause = () => {};
+
+		}
 	), 3000
 );
