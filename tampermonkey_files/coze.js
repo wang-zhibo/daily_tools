@@ -16,7 +16,7 @@
     var style = document.createElement('style');
     style.innerHTML = `
         .sidesheet-container {
-            grid-template-columns: 13fr 13fr 48fr !important;
+            grid-template-columns: 10fr 13fr 48fr !important;
         }
     `;
     document.head.appendChild(style);
