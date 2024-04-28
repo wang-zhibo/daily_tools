@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Coze
 // @namespace    http://tampermonkey.net/
-// @version      2024-02-12
+// @version      2024-04-28
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.coze.com/*
@@ -16,7 +16,7 @@
     var style = document.createElement('style');
     style.innerHTML = `
         .sidesheet-container {
-            grid-template-columns: 10fr 13fr 48fr !important;
+            grid-template-columns: 18fr 30fr !important;
         }
     `;
     document.head.appendChild(style);
