@@ -226,8 +226,9 @@ class MyLogger:
             "function": log_entry["function"],
             "request_id": log_entry["extra"].get("request_id", "unknown")
         }
+        headers = {"Content-Type": "application/json"}
         try:
-            response = requests.post(self.remote_log_url, json=payload, timeout=5)
+            response = requests.post(self.remote_log_url, headers=headers, json=payload, timeout=6)
             response.raise_for_status()
         except requests.RequestException as e:
             # 如果发送失败，记录到本地日志
